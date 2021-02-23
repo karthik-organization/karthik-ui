@@ -1,8 +1,12 @@
 #!/bin/sh
 
+<<<<<<< HEAD
 BRANCH="$(git branch --show-current)"
 
 echo $BRANCH
+=======
+echo "vars ${scmVars}"
+>>>>>>> 5877c42 (scm)
 
 if [ "$BRANCH" != "dev" ] || [ "$BRANCH" != "master" ]; then
 
@@ -14,6 +18,10 @@ if [ "$BRANCH" != "dev" ] || [ "$BRANCH" != "master" ]; then
 
   rm -rf node_modules yarn.lock
 
+<<<<<<< HEAD
 fi
 
 echo $BRANCH
+=======
+# fi
+>>>>>>> 5877c42 (scm)
